@@ -15,9 +15,13 @@ public class MeuPrograma4 {
 	// verificaSePodeDirigir(int idade) é um método
 	// um metodo seria a mesma coisa que uma função
 	public static void verificaSePodeDirigir(int idade){
+		// OBSERVAR ALTERCACO NO GIT
 		if( idade>=18 ){
+			
 			System.out.println("Sua idade eh " + idade + " e voce pode dirigir");
+			
 		} else {
+			
 			System.out.println("Sua idade eh " + idade + " e voce nao pode dirigir");
 		}
 	}
