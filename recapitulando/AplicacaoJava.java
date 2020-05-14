@@ -4,17 +4,15 @@ public class AplicacaoJava {
 	
 	public static void main(String[] args){
 		
-		//declarar variaveis
 		Aluno aluno = null;
 		
-		//fazer do while
+		aluno = new Aluno("Sem Nome",0,"Sem Cidade");
+		Scanner scanner = new Scanner(System.in);
+		int opcaoEscolhida =0;
+		System.out.println("Digite Um Nome");
+
 		
-			//imprimir mensagem pedindo opcao
-			
-			//pedir dados
-			
-			
-			//imprimir o toString
+		//sera feito depois pelo claudemir
 		
 	}
 	
