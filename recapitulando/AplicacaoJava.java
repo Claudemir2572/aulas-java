@@ -1,21 +1,42 @@
+import dominio.Aluno;
 import java.util.Scanner;
-// nossa que nome dou?
-// O nome pode Ser iniciado com maiuscula e no meio por maiuscula não
-// interfere em nada?
+
 public class AplicacaoJava {
 	
 	public static void main(String[] args){
 		
-		Aluno aluno = null;
-		
-		aluno = new Aluno("Sem Nome",0,"Sem Cidade");
+		Aluno alunos = null;
+		alunos = new Aluno("Sem Nome",0,"Sem Cidade");
 		Scanner scanner = new Scanner(System.in);
-		int opcaoEscolhida =0;
-		System.out.println("Digite Um Nome");
+		int opcEscolhida =0;
+		
+		do {
+				System.out.print("Escolha Uma Opçao.: "+
+								"[1] Cadastrar: "+
+								"[2] Exibir: "+
+								"[3] Cidade: "+
+								"[0] Sair: "+
+								" ==>");
+								
+				opcEscolhida = scanner.nextInt();
 
-		
-		//sera feito depois pelo claudemir
-		
+				if (opcEscolhida == 1 ) {
+					
+					System.out.print("Digite Um Nome..: ");
+					alunos = new Aluno (scanner.next());
+					System.out.print("Digite Sua Idade..: ");
+					alunos.setIdade(scanner.nextInt());
+					System.out.print("Digite Sua Cidade.: ");
+					alunos.setCidade(scanner.next());
+					
+		} else if ( opcEscolhida == 2 ){
+			
+					System.out.println(alunos.getNome());
+					System.out.println(alunos.getIdade());
+					System.out.println(alunos.getCidade());
+			}
+		}while (opcEscolhida != 0);
 	}
-	
+
 }
+	
